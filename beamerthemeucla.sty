@@ -11,12 +11,12 @@
 \useinnertheme{ucla}
 \useoutertheme{ucla}
 \usecolortheme{ucla}
-\usefonttheme{ucla}
+%\usefonttheme{ucla}
+\setbeamerfont{block title}{size={}}
 
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true]
 \setbeamertemplate{blocks}[rounded][shadow=false]  
-
-
 
 
 % Title page lengths:
@@ -46,22 +46,22 @@
 \setbeamersize{text margin left=.5cm, text margin right=.5cm} 
 
 % Title page
-\defbeamertemplate*{title page}{ucla}[1][]
-{
-	\begin{tikzpicture}
-	\useasboundingbox (0,0) rectangle (\textwidth,0.98\textheight);
-	
-	\node[draw=uclaBlueDark, very thick, rounded corners=10pt,
-		  align=center,
-		  text width=0.75\textwidth]
-		at (0.5\textwidth, 0.5\textheight)
-		{The command \texttt{\textbackslash titlepage} is not supported\\[1.0em]
-		Use the command \texttt{\textbackslash insertTitleSlide} instead.\\
-		This command does not go in a frame environment.};
-	
-	\end{tikzpicture}
-	
-}
+%\defbeamertemplate*{title page}{ucla}[1][]
+%{
+%	\begin{tikzpicture}
+%	\useasboundingbox (0,0) rectangle (\textwidth,0.98\textheight);
+%	
+%	\node[draw=uclaBlueDark, very thick, rounded corners=10pt,
+%		  align=center,
+%		  text width=0.75\textwidth]
+%		at (0.5\textwidth, 0.5\textheight)
+%		{The command \texttt{\textbackslash titlepage} is not supported\\[1.0em]
+%		Use the command \texttt{\textbackslash insertTitleSlide} instead.\\
+%		This command does not go in a frame environment.};
+%	
+%	\end{tikzpicture}
+%	
+%}
 
 
 

@@ -1,39 +1,47 @@
 \documentclass{beamer}
-
+\usepackage[T1]{fontenc}
 \usepackage{lipsum}
+\usepackage{anyfontsize}
 
 % Load theme:
 \usetheme{ucla}
 
+%\mode<presentation> {
+%  \usetheme{ucla}
+%  \setbeamertemplate{headline}{}
+%  \setbeamertemplate{title page}[default][colsep=-4bp,rounded=true]
+%  \setbeamertemplate{background}{
+%  \begin{tikzpicture}
+%  \node[inner sep=-0.1\paperwidth]{
+%  \includegraphics[width=\paperwidth,angle=45]{UCLA_shield_light.png}};
+%  \end{tikzpicture}}
+%}
 
 % Set title page values:
 \title{A review of Death Star design flaws}
+\subtitle{Resistance Seminar}
+\author{Poe Dameron \\ \vspace{5pt} \scriptsize w/ Finn, and Rey}
+\institute[]{\includegraphics[width=0.6\textwidth]{bhaumikLogo}}
 \date{A long time ago}
-\author{Poe Dameron, Finn, and Rey}
 \location{3rd Conference on Death Star Destruction}
-
 
 % Turn on slide numbers:
 \showSlideNumber{}
 
 
-
-
-
 \begin{document}
 
-% Title frame:
-\insertTitleSlide
 
-%\begin{frame}
-%	\titlepage
-%\end{frame}
+% Title frame:
+%\insertTitleSlide
+\begin{frame}[noframenumbering,plain]
+  \titlepage
+\end{frame}
 
 
 \begin{frame} 
 \frametitle{A font sample} 
-\framesubtitle{\printcurrentfont} 
-
+\framesubtitle{Subtitle test} 
 Some sample text
 \begin{itemize}
 	\item A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
@@ -45,12 +53,10 @@ Some sample text
 		\item $\alpha \beta \gamma \delta \omega \text{A} \text{B} \Gamma \Delta \Omega$
 		\item $\sin$, $\cos$, $\ln$, $+ - * /$
 	\end{itemize}
-	
 	\begin{equation}
 		d\left( x, y \right) = \sum_{n=1}^N d_n \, b_n \left( x, y \right)
 	\end{equation}
 \end{itemize}
-
 \end{frame}
 
 
