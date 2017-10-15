@@ -66,22 +66,28 @@
 
 
 
-
-
-
-
-
-
-
-
 \setbeamertemplate{background}{
 \begin{tikzpicture}
-	\useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-	
-	% Just use a white background:
-	\fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \node[inner sep=-0.1\paperwidth]{
+  \includegraphics[width=\paperwidth,angle=45]{UCLA_shield_light.png}};
 \end{tikzpicture}
 }
+
+
+
+
+
+
+
+
+%\setbeamertemplate{background}{
+%\begin{tikzpicture}
+%	\useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+%	
+%	% Just use a white background:
+%	\fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+%\end{tikzpicture}
+%}
 
 \mode
 <all>
